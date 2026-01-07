@@ -76,9 +76,7 @@ public static final Category pvp = new Category("Glazed PVP", new ItemStack(Item
         Modules.get().add(new ChunkFinder());
         Modules.get().add(new BlockNotifier());
         Modules.get().add(new AnchorMacro());
-        Modules.get().add(new SpawnerOrder());
         Modules.get().add(new RegionMap());
-        Modules.get().add(new SpawnerOrder());
         Modules.get().add(new SpawnerOrder());
         Modules.get().add(new AutoShulkerShellOrder());
         Modules.get().add(new NoBlockInteract());
