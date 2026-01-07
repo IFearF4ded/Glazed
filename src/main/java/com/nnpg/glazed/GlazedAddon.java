@@ -20,9 +20,9 @@ import meteordevelopment.meteorclient.systems.modules.Category;
 
 public class GlazedAddon extends MeteorAddon {
 
-public static final Category CATEGORY = new Category("Glazed", new ItemStack(Items.CAKE));
-public static final Category esp = new Category("Glazed ESP ", new ItemStack(Items.VINE));
-public static final Category pvp = new Category("Glazed PVP", new ItemStack(Items.DIAMOND_SWORD));
+public static final Category CATEGORY = new Category("Glazed");
+public static final Category esp = new Category("Glazed ESP");
+public static final Category pvp = new Category("Glazed PVP");
 
 
 
