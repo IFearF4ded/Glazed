@@ -7,7 +7,7 @@ import meteordevelopment.meteorclient.systems.modules.Module;
 import meteordevelopment.meteorclient.utils.player.ChatUtils;
 import meteordevelopment.orbit.EventHandler;
 
-public class TPASpammer extends Module {
+public class AutoRTPER extends Module {
 
     private final SettingGroup sgGeneral = settings.getDefaultGroup();
 
