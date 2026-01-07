@@ -11,7 +11,6 @@ public class AutoRTPER extends Module {
 
     private final SettingGroup sgGeneral = settings.getDefaultGroup();
 
-    // Player name
     private final Setting<String> targetPlayer = sgGeneral.add(new StringSetting.Builder()
         .name("target-player")
         .description("Player to send TPA requests to.")
@@ -19,7 +18,6 @@ public class AutoRTPER extends Module {
         .build()
     );
 
-    // Toggle between /tpa and /tpahere
     private final Setting<Boolean> tpaHere = sgGeneral.add(new BoolSetting.Builder()
         .name("tpa-here")
         .description("Use /tpahere instead of /tpa.")
@@ -27,12 +25,11 @@ public class AutoRTPER extends Module {
         .build()
     );
 
-    // Delay slider (anti-spam safe)
     private final Setting<Integer> delaySeconds = sgGeneral.add(new IntSetting.Builder()
         .name("delay-seconds")
         .description("Delay between TPA messages (seconds).")
         .defaultValue(3)
-        .min(3)              // SAFE minimum
+        .min(3)
         .sliderMin(3)
         .sliderMax(30)
         .build()
@@ -40,8 +37,9 @@ public class AutoRTPER extends Module {
 
     private int timer;
 
-    public TPASpammer() {
-        super(GlazedAddon.CATEGORY, "TPA-Spammer", "Automatically sends /tpa or /tpahere.");
+    // FIXED: Constructor must match the class name
+    public AutoRTPER() {
+        super(GlazedAddon.CATEGORY, "auto-rtper", "Automatically sends /tpa or /tpahere.");
     }
 
     @Override
